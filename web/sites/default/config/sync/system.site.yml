@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: a24640e7-52bb-4286-9003-62744db26c85
+name: 'Zero O''Clock'
+mail: saraahjacobs@gmail.com
+slogan: 'And you''re gonna be happy'
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en

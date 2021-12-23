@@ -1,0 +1,31 @@
+uuid: 3978597d-ecac-42a2-bca5-441e36e696a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.office.field_address
+    - field.field.node.office.field_contact_person
+    - field.field.node.office.field_email
+    - field.field.node.office.field_fax
+    - field.field.node.office.field_tel
+    - node.type.office
+  module:
+    - user
+id: node.office.teaser
+targetEntityType: node
+bundle: office
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_address: true
+  field_contact_person: true
+  field_email: true
+  field_fax: true
+  field_tel: true
+  langcode: true

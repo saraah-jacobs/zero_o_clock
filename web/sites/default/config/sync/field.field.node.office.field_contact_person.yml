@@ -1,0 +1,19 @@
+uuid: 1f0beec9-5efd-436f-b2fa-621bf1284a72
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contact_person
+    - node.type.office
+id: node.office.field_contact_person
+field_name: field_contact_person
+entity_type: node
+bundle: office
+label: 'Contact person'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

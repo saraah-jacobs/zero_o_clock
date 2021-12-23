@@ -1,0 +1,11 @@
+uuid: 8a0c876c-4993-46e8-ab5c-8f9f566eafcc
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.office
+id: node.office
+target_entity_type_id: node
+target_bundle: office
+default_langcode: site_default
+language_alterable: false

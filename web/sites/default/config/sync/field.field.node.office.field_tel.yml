@@ -1,0 +1,21 @@
+uuid: 26f6e8a2-1914-4615-a9d8-e97eddabf6b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tel
+    - node.type.office
+  module:
+    - telephone
+id: node.office.field_tel
+field_name: field_tel
+entity_type: node
+bundle: office
+label: Tel
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

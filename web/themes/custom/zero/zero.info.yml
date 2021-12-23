@@ -1,0 +1,17 @@
+name: Zero
+type: theme
+description: 'Custom theme for Zero project'
+package: Zero
+core: 8.x
+core_version_requirement: ^8 || ^9
+base theme: bartik
+libraries:
+  - zero/global-styling
+regions:
+  top-header: 'Top Header'
+  header: Header
+  primary_menu: 'Primary Menu'
+  content: Content
+  breadcrumb: 'Breadcrumb'
+  sidebar_first: 'Sidebar first'
+  footer: 'Footer'

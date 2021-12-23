@@ -1,0 +1,22 @@
+uuid: 99f73ae3-2342-4d2e-9ac0-17000383ad32
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - zero_theme
+_core:
+  default_config_hash: KC12e0aosUnBBs5bd374JVcQjJaFNOSIHzu0dUGf22o
+id: zero_theme_messages
+theme: zero_theme
+region: top-header
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }
