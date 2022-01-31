@@ -2,3 +2,17 @@ name: calibrate-drupal-sollicitatie
 recipe: drupal9
 config:
   webroot: web
+services:
+  database:
+    portforward: 37001
+  node:
+    type: node
+    globals: 
+      gulp-cli: "latest"
+tooling:
+  npm:
+    service: node
+  node:
+    service: node
+  gulp:
+    service: node
