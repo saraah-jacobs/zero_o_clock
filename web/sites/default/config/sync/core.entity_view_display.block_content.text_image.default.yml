@@ -1,0 +1,23 @@
+uuid: 570ac1b2-0524-4989-94c6-fbb60bbd67cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.text_image
+    - field.field.block_content.text_image.body
+  module:
+    - text
+id: block_content.text_image.default
+targetEntityType: block_content
+bundle: text_image
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
