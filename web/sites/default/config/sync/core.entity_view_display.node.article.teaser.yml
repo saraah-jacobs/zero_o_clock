@@ -9,7 +9,7 @@ dependencies:
     - field.field.node.article.field_office
     - field.field.node.article.field_tags
     - field.field.node.article.layout_builder__layout
-    - image.style.medium
+    - image.style.large
     - node.type.article
   module:
     - image
@@ -35,7 +35,7 @@ content:
     label: hidden
     settings:
       image_link: content
-      image_style: medium
+      image_style: large
     third_party_settings: {  }
     weight: 0
     region: content

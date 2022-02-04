@@ -1,0 +1,36 @@
+.row {
+    display: flex;
+  }
+
+.card{
+    padding: 0 3%;
+    transition: transform .2s; 
+
+    h2 {
+        text-transform: uppercase;
+        a {
+            color: $second-colour;
+        }
+    }
+
+    img {
+        margin:0;
+        width: 100%;
+        border-radius: 0 15% 0 0;
+        clip-path: polygon(0% 0%, 0% 90%, 100% 100%, 100% 0%);
+    }
+
+    &:hover{
+        transform: scale(1.02); 
+    }
+}
+
+.views-view-grid .views-col {
+    padding: 0;
+}
+.views-view-grid.horizontal .views-col:first-child {
+    padding: 0;
+  }
+.views-view-grid.horizontal .views-col:last-child {
+    padding: 0;
+}

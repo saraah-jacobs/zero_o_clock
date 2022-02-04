@@ -4,8 +4,16 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Libre Baskerville", serif;
+  font-family: "Nunito", sans-serif;
   color: #8C93C6;
+}
+
+.shadow1 {
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.2);
+}
+
+.shadow2 {
+  box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
 }
 
 a {
@@ -14,6 +22,42 @@ a {
 
 .site-branding__logo img {
   width: 20vw;
+}
+
+.row {
+  display: flex;
+}
+
+.card {
+  padding: 0 3%;
+  transition: transform 0.2s;
+}
+.card h2 {
+  text-transform: uppercase;
+}
+.card h2 a {
+  color: #593959;
+}
+.card img {
+  margin: 0;
+  width: 100%;
+  border-radius: 0 15% 0 0;
+  clip-path: polygon(0% 0%, 0% 90%, 100% 100%, 100% 0%);
+}
+.card:hover {
+  transform: scale(1.02);
+}
+
+.views-view-grid .views-col {
+  padding: 0;
+}
+
+.views-view-grid.horizontal .views-col:first-child {
+  padding: 0;
+}
+
+.views-view-grid.horizontal .views-col:last-child {
+  padding: 0;
 }
 
 /*# sourceMappingURL=sass */

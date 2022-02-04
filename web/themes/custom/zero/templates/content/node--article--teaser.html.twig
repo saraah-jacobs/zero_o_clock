@@ -68,20 +68,22 @@
  * @ingroup themeable
  */
 #}
-<article{{ attributes }}>
+<article{{attributes}}>
+	<div class="card">
+		<div{{content_attributes}}>
+			{{ content.field_image }}
+			<div class="card-info">
+				{{ title_prefix }}
+				{% if label and not page %}
+					<h2{{title_attributes}}>
+						<a href="{{ url }}" rel="bookmark">{{ label }}</a>
+					</h2>
 
-  <div{{ content_attributes }}>
-    {{ content.field_image }}
+				{% endif %}
+				{{ title_suffix }}
 
-    {{ title_prefix }}
-  {% if label and not page %}
-    <h2{{ title_attributes }}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h2>
-  {% endif %}
-  {{ title_suffix }}
-
-  {{ content.body }}
-  </div>
-
+				{{ content.body }}
+			</div>
+		</div>
+	</div>
 </article>
