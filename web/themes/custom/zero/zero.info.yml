@@ -10,9 +10,9 @@ libraries:
 regions:
   top-header: 'Top Header'
   header: Header
-  primary_menu: 'Primary Menu'
   content: Content
   breadcrumb: 'Breadcrumb'
   sidebar_first: 'Sidebar first'
   footer: 'Footer'
+  credits: 'Credits'
 logo: logo.svg

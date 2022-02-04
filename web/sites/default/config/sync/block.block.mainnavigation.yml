@@ -1,4 +1,4 @@
-uuid: efc01d55-a37a-4359-958b-70d27a815516
+uuid: 9ecf2a86-e2e7-4196-be96-2eaf142bcf96
 langcode: en
 status: true
 dependencies:
@@ -8,11 +8,9 @@ dependencies:
     - system
   theme:
     - zero
-_core:
-  default_config_hash: _G1IfGESk7WqvVCi7B3VJxhSY0YICgv1OmuVPJqO8bE
-id: zero_main_menu
+id: mainnavigation
 theme: zero
-region: header
+region: footer
 weight: -5
 provider: null
 plugin: 'system_menu_block:main'
@@ -22,6 +20,6 @@ settings:
   label_display: '0'
   provider: system
   level: 1
-  depth: 1
+  depth: 0
   expand_all_items: false
 visibility: {  }

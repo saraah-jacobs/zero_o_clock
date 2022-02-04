@@ -9,7 +9,7 @@ dependencies:
 id: zero_languageswitcher
 theme: zero
 region: header
-weight: -5
+weight: -4
 provider: null
 plugin: 'language_block:language_interface'
 settings:
