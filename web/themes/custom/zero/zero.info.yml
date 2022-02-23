@@ -1,10 +1,10 @@
 name: Zero
 type: theme
-description: 'Custom theme for Zero project'
+description: 'Custom subtheme for Zero project based on Bootstrap 5 theme.'
 package: Zero
 core: 8.x
 core_version_requirement: ^8 || ^9
-base theme: bartik
+base theme: bootstrap5
 libraries:
   - zero/global-styling
 regions:

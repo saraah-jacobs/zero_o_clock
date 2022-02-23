@@ -1,9 +1,6 @@
-.row {
-    display: flex;
-  }
-
 .card{
-    padding: 0 3%;
+    background-color:transparent;
+    border:none;
     transition: transform .2s; 
 
     h2 {
@@ -23,14 +20,4 @@
     &:hover{
         transform: scale(1.02); 
     }
-}
-
-.views-view-grid .views-col {
-    padding: 0;
-}
-.views-view-grid.horizontal .views-col:first-child {
-    padding: 0;
-  }
-.views-view-grid.horizontal .views-col:last-child {
-    padding: 0;
 }

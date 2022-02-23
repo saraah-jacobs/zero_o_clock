@@ -1,0 +1,10 @@
+<?php
+
+/**
+ * Implements hook_preprocess_links().
+ */
+function zero_preprocess_links(array &$variables): void {
+    if (!isset($variables['language'])) {
+      $variables['language'] = Drupal::languageManager()->getCurrentLanguage();
+    }
+  }

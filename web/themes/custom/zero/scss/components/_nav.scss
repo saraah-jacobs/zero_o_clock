@@ -1,0 +1,21 @@
+.menu--main {
+  .nav-link {
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $bg-colour;
+    &:hover {
+      color: $main-colour;
+      font-weight: 700;
+    }
+    &.is-active {
+      text-decoration: underline;
+    }
+  }
+}
+
+.shrink {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  min-height: 70px !important;
+}

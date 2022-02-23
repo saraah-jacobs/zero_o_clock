@@ -7,11 +7,169 @@ dependencies:
     - field.field.node.office.field_contact_person
     - field.field.node.office.field_email
     - field.field.node.office.field_fax
+    - field.field.node.office.field_image
     - field.field.node.office.field_tel
+    - field.field.node.office.layout_builder__layout
     - node.type.office
+    - views.view.articles
+  content:
+    - 'block_content:basic:7ce28c57-0140-46c4-a615-4c034fe2e150'
   module:
     - address
+    - block_content
+    - layout_builder
+    - layout_discovery
     - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          6210ae61-e3fe-44b2-9b4b-79dc7a8aed4b:
+            uuid: 6210ae61-e3fe-44b2-9b4b-79dc7a8aed4b
+            region: content
+            configuration:
+              id: 'block_content:7ce28c57-0140-46c4-a615-4c034fe2e150'
+              label: 'Back to overview offices'
+              label_display: '0'
+              provider: block_content
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            weight: 6
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          4fa04411-1d6a-4f21-9bdb-eb9b8bde4ea1:
+            uuid: 4fa04411-1d6a-4f21-9bdb-eb9b8bde4ea1
+            region: first
+            configuration:
+              id: 'field_block:node:office:field_image'
+              label: Image
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: large
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          9a40a125-eb9e-4e50-9fc0-4005d0ef589d:
+            uuid: 9a40a125-eb9e-4e50-9fc0-4005d0ef589d
+            region: second
+            configuration:
+              id: 'field_block:node:office:field_tel'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: basic_string
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          ad5afa01-1c19-4bf4-a59a-855d9341a3fd:
+            uuid: ad5afa01-1c19-4bf4-a59a-855d9341a3fd
+            region: second
+            configuration:
+              id: 'field_block:node:office:field_fax'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: basic_string
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          7a765baf-e8bd-43b4-a28f-aa119fcb0fad:
+            uuid: 7a765baf-e8bd-43b4-a28f-aa119fcb0fad
+            region: second
+            configuration:
+              id: 'field_block:node:office:field_address'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: address_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          8209b86e-abe1-4e04-9fa8-dedb08c40213:
+            uuid: 8209b86e-abe1-4e04-9fa8-dedb08c40213
+            region: second
+            configuration:
+              id: 'field_block:node:office:field_email'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: basic_string
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          7a4122f1-568e-4c59-b1eb-57d11d677faa:
+            uuid: 7a4122f1-568e-4c59-b1eb-57d11d677faa
+            region: second
+            configuration:
+              id: 'field_block:node:office:field_contact_person'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          8d62a255-40f7-4a79-80e8-9da9c2d9ba78:
+            uuid: 8d62a255-40f7-4a79-80e8-9da9c2d9ba78
+            region: content
+            configuration:
+              id: 'views_block:articles-block_3'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: '3'
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
 id: node.office.default
 targetEntityType: node
 bundle: office
@@ -59,4 +217,6 @@ content:
     weight: 100
     region: content
 hidden:
+  field_image: true
   langcode: true
+  layout_builder__layout: true

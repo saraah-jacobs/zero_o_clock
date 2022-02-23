@@ -1,0 +1,15 @@
+uuid: 40690c5c-42b7-48de-95a7-3ec3a81471b4
+langcode: en
+status: true
+dependencies: {  }
+name: 300x200
+label: 300x200
+effects:
+  3ac2e59a-3a5c-4d36-9953-5059a36fe778:
+    uuid: 3ac2e59a-3a5c-4d36-9953-5059a36fe778
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 200
+      anchor: center-center

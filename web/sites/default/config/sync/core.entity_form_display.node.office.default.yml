@@ -7,10 +7,14 @@ dependencies:
     - field.field.node.office.field_contact_person
     - field.field.node.office.field_email
     - field.field.node.office.field_fax
+    - field.field.node.office.field_image
     - field.field.node.office.field_tel
+    - field.field.node.office.layout_builder__layout
+    - image.style.thumbnail
     - node.type.office
   module:
     - address
+    - image
     - path
     - telephone
 id: node.office.default
@@ -52,6 +56,14 @@ content:
     region: content
     settings:
       placeholder: ''
+    third_party_settings: {  }
+  field_image:
+    type: image_image
+    weight: 127
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
   field_tel:
     type: telephone_default
@@ -112,4 +124,5 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  layout_builder__layout: true

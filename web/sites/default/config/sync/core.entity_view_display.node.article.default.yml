@@ -31,19 +31,19 @@ third_party_settings:
         layout_settings:
           label: ''
         components:
-          fb628e2c-b28c-4585-bf46-e398af83dad3:
-            uuid: fb628e2c-b28c-4585-bf46-e398af83dad3
+          93ea1c6a-e8f6-4b7c-bbbb-d6e2fac64d64:
+            uuid: 93ea1c6a-e8f6-4b7c-bbbb-d6e2fac64d64
             region: content
             configuration:
               id: 'block_content:7d3f26c9-f592-452d-90bb-c277bd6f7f65'
-              label: 'Back to overview'
+              label: 'Back to overview articles'
               label_display: '0'
               provider: block_content
               status: true
               info: ''
               view_mode: full
               context_mapping: {  }
-            weight: 0
+            weight: 1
             additional: {  }
         third_party_settings: {  }
       -

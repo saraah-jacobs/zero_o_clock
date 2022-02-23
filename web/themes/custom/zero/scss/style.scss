@@ -1,5 +1,8 @@
 // Theme styling
-@import 'abstracts/variables_theme';
+@import "abstracts/variables_theme";
+
+// Include bootstrap.
+@import "../../../../themes/contrib/bootstrap5/scss/style";
 
 // Base
 @import "base/general";
@@ -8,3 +11,8 @@
 // Components
 @import "components/logo";
 @import "components/card";
+@import "components/nav";
+
+//layout
+@import "layout/block";
+@import "layout/header";

@@ -1,0 +1,83 @@
+header, footer {
+    background-color: $header-bg-colour;
+    transition: 0.2s;
+
+    .btn {
+        color: $bg-colour;
+        text-transform: uppercase;
+
+        &:hover {
+            color: $main-colour;
+        }
+    }
+
+    .region-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100px;
+        @include media-breakpoint-down(lg) {
+            justify-content: flex-start;
+            height: 170px;
+            flex: 1;
+        }
+    }
+
+    .region-footer{
+        display: flex;
+        align-items: center;
+    }
+
+    .block-language {
+        display: flex;
+        align-items: center;
+        margin-left: 1rem;
+        @include media-breakpoint-down(xl) {
+            margin-left: 0.5rem;
+        }
+
+        li {
+            display: flex;
+        }
+    }
+
+    .language-link {
+        width: 100%;
+        padding: 0.25rem 1.5rem;
+        clear: both;
+        font-weight: 400;
+        color: $body-color;
+        text-align: inherit;
+        text-decoration: none;
+        white-space: nowrap;
+        background-color: transparent;
+        border: 0;
+        position: relative;
+
+        &:active {
+            color: $white;
+            text-decoration: none;
+        }
+
+        &.is-active {
+            &:before {
+                content: url(../../images/check.svg);
+                line-height: 0;
+                position: absolute;
+                left: 0.325rem;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            &:active {
+                &:before {
+                    content: url(../../images/check_white.svg);
+                }
+            }
+        }
+    }
+}
+
+footer {
+    margin-top: 5em;
+}
